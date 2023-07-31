@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>No me digas gato</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f1f1f1;
+        }
+
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            position: relative;
+            transform: rotate(-45deg);
+            margin-bottom: 40px; /* Ajustamos el margen inferior para separar el corazón del texto */
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            border-radius: 50%;
+        }
+
+        .heart:before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart:after {
+            top: 0;
+            left: 50px;
+        }
+
+        .message {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            margin-top: 20px; /* Añadimos un margen superior para separar el texto del corazón */
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+    <div class="message">No me digas gato</div>
+</body>
+</html>
+
+
+
